@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Context Page</h1>
+<p>There should be some context under this text.</p>
+<p> {{ text }}  {{ number }}</p>
+
+{% for loop_item in my_list %}
+<li> {{forloop.counter }} : {{ loop_item }} </li>
+{% endfor %}
+
+{% endblock %}
